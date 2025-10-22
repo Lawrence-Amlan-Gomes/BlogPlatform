@@ -1,10 +1,10 @@
 "use client";
-import Link from "next/link";
 import { useTheme } from "@/app/hooks/useTheme";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { BsTwitterX } from "react-icons/bs";
+import Link from "next/link";
 import { useState } from "react";
+import { BsTwitterX } from "react-icons/bs";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { TiTick } from "react-icons/ti";
 
 function Footer() {
@@ -66,8 +66,8 @@ function Footer() {
               rel="noopener noreferrer"
               className={`text-xl ${
                 theme
-                  ? "text-[#0a0a0a] hover:text-blue-800"
-                  : "text-[#ebebeb] hover:text-blue-600"
+                  ? "text-[#0a0a0a] hover:text-pink-800"
+                  : "text-[#ebebeb] hover:text-pink-600"
               }`}
             >
               <BsTwitterX />
@@ -78,8 +78,8 @@ function Footer() {
               rel="noopener noreferrer"
               className={`text-xl ${
                 theme
-                  ? "text-[#0a0a0a] hover:text-blue-800"
-                  : "text-[#ebebeb] hover:text-blue-600"
+                  ? "text-[#0a0a0a] hover:text-pink-800"
+                  : "text-[#ebebeb] hover:text-pink-600"
               }`}
             >
               <FaLinkedin />
@@ -90,8 +90,8 @@ function Footer() {
               rel="noopener noreferrer"
               className={`text-xl ${
                 theme
-                  ? "text-[#0a0a0a] hover:text-blue-800"
-                  : "text-[#ebebeb] hover:text-blue-600"
+                  ? "text-[#0a0a0a] hover:text-pink-800"
+                  : "text-[#ebebeb] hover:text-pink-600"
               }`}
             >
               <FaGithub />
@@ -104,8 +104,8 @@ function Footer() {
               }}
               className={`text-xl ${
                 theme
-                  ? "text-[#0a0a0a] hover:text-blue-800"
-                  : "text-[#ebebeb] hover:text-blue-600"
+                  ? "text-[#0a0a0a] hover:text-pink-800"
+                  : "text-[#ebebeb] hover:text-pink-600"
               }`}
             >
               <SiGmail />
@@ -114,8 +114,8 @@ function Footer() {
               <div
                 className={`px-3 sm:px-4 py-2 rounded-md text-xs sm:text-[15px] font-medium hover:cursor-pointer ${
                   theme
-                    ? "bg-blue-800 text-[#ffffff] hover:bg-white border-[1px] border-blue-800 hover:text-blue-800"
-                    : "bg-blue-700 text-[#ffffff] hover:bg-black border-[1px] border-blue-600 hover:text-blue-600"
+                    ? "bg-pink-800 text-[#ffffff] hover:bg-white border-[1px] border-pink-800 hover:text-pink-800"
+                    : "bg-pink-700 text-[#ffffff] hover:bg-black border-[1px] border-pink-600 hover:text-pink-600"
                 }`}
               >
                 Stay Connected

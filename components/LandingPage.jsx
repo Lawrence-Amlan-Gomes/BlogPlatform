@@ -9,7 +9,11 @@ export default function LandingPage() {
   // Animation variants for smooth fade-in and slide
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   const textVariants = {
@@ -41,7 +45,10 @@ export default function LandingPage() {
           }`}
           variants={textVariants}
         >
-          Connect, create, and share your ideas with the world! Build engaging blog posts, spark conversations with comments, and vote on content that inspires you—all in a sleek, modern platform designed for creators.
+          Connect, create, and share your ideas with the world! Build engaging
+          blog posts, spark conversations with comments, and vote on content
+          that inspires you—all in a sleek, modern platform designed for
+          creators.
         </motion.p>
         <motion.div
           className="flex gap-4 justify-center"
@@ -51,8 +58,8 @@ export default function LandingPage() {
             href="/register"
             className={`px-6 py-3 rounded-lg font-semibold text-lg transition-colors ${
               theme
-                ? "bg-blue-700 text-white hover:bg-blue-800"
-                : "bg-blue-700 text-white hover:bg-blue-800"
+                ? "bg-pink-700 text-white hover:bg-pink-800"
+                : "bg-pink-700 text-white hover:bg-pink-800"
             }`}
           >
             Get Started
@@ -75,7 +82,10 @@ export default function LandingPage() {
         }`}
         variants={textVariants}
       >
-        <p>Join a vibrant community of writers and readers. <br /> Crafted for Malaysia’s tech enthusiasts.</p>
+        <p>
+          Join a vibrant community of writers and readers. <br /> Crafted for
+          Malaysia’s tech enthusiasts.
+        </p>
       </motion.div>
     </div>
   );

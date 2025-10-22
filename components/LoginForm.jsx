@@ -1,16 +1,15 @@
 "use client";
 
+import { getAllUsers2, performLogin } from "@/app/actions";
+import colors from "@/app/color/color";
+import { useAuth } from "@/app/hooks/useAuth";
+import { useTheme } from "@/app/hooks/useTheme";
+import { signIn, useSession } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import EachField from "./EachField";
-import { performLogin, getAllUsers2, signInWithGoogle } from "@/app/actions";
-import { useAuth } from "@/app/hooks/useAuth";
-import { useRouter } from "next/navigation";
-import { useTheme } from "@/app/hooks/useTheme";
-import Image from "next/image";
-import { useSession, signIn } from "next-auth/react";
-import colors from "@/app/color/color";
-import { callChangePhoto, callUpdateUser } from "@/app/actions";
 
 async function hashPassword(password, iterations = 10000) {
   try {
@@ -291,8 +290,8 @@ const LoginForm = () => {
             onClick={handleGoogleSignIn}
             className={`text-[12px] lg:text-[16px] 2xl:text-[25px] flex items-center gap-4 lg:h-[60px] h-[40px] cursor-pointer rounded-md mt-10 py-2 px-4 lg:px-6 ${
               theme
-                ? "bg-blue-700 hover:bg-blue-800"
-                : "bg-blue-900 hover:bg-blue-950"
+                ? "bg-pink-700 hover:bg-pink-800"
+                : "bg-pink-900 hover:bg-pink-950"
             } text-white`}
           >
             <div className="h-full flex justify-center items-center">
@@ -321,7 +320,7 @@ const LoginForm = () => {
           No Account?{" "}
           <Link
             href="/register"
-            className={`${colors.keyColorText} hover:text-blue-500`}
+            className={`${colors.keyColorText} hover:text-pink-500`}
           >
             Register
           </Link>

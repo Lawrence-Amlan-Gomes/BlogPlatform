@@ -1,9 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+import blogs from "@/app/blogs/blogs";
 import { useTheme } from "@/app/hooks/useTheme";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
-import blogs from "@/app/blogs/blogs";
 
 export default function LandingBlogs() {
   const { theme } = useTheme();
@@ -55,7 +55,8 @@ export default function LandingBlogs() {
             theme ? "text-[#666666]" : "text-[#aaaaaa]"
           }`}
         >
-          Along with coding I also like to write about Technology, life and technical puzzles. Here are some of my recent posts.
+          Along with coding I also like to write about Technology, life and
+          technical puzzles. Here are some of my recent posts.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
@@ -73,8 +74,8 @@ export default function LandingBlogs() {
           <div
             className={`px-4 py-2 rounded-md text-sm sm:text-[15px] font-medium hover:cursor-pointer ${
               theme
-                ? "bg-blue-800 text-[#ffffff] hover:bg-white border-[1px] border-blue-800 hover:text-blue-800"
-                : "bg-blue-700 text-[#ffffff] hover:bg-black border-[1px] border-blue-600 hover:text-blue-600"
+                ? "bg-pink-800 text-[#ffffff] hover:bg-white border-[1px] border-pink-800 hover:text-pink-800"
+                : "bg-pink-700 text-[#ffffff] hover:bg-black border-[1px] border-pink-600 hover:text-pink-600"
             }`}
           >
             View All Blogs
